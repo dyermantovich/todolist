@@ -9,7 +9,7 @@ export const PageNotFound = () => (
     <h1 className={styles.title}>404</h1>
     <h2 className={styles.subtitle}>page not found</h2>
     <Button variant="contained" component={Link} to={Path.Main} sx={{ width: "330px", mt: "20px" }}>
-      Вернуться на главную
+      Back to main page
     </Button>
   </Container>
 )
