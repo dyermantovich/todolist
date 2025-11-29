@@ -43,7 +43,7 @@ export const Tasks = ({ todolist }: Props) => {
             ))}
           </List>
 
-          {data?.totalCount > PAGE_SIZE && (
+          {data?.totalCount !== undefined && data?.totalCount > PAGE_SIZE && (
             <TasksPagination totalCount={data?.totalCount || 0} page={page} setPage={setPage} />
           )}
         </>
